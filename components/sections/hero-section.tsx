@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { Badge } from "../ui/badge";
 
 const emojis = [
   { e:"🍳", top:"8%",  left:"4%",   size:"3rem",   delay:"0s",   dur:"8s"  },
@@ -47,22 +49,12 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-[860px] mx-auto px-[5%] py-8 text-center">
         {/* Badge */}
-        <div
-          className="inline-flex items-center gap-2 mb-8"
-          style={{
-            background: "rgba(192,57,43,0.15)",
-            border: "1px solid rgba(192,57,43,0.4)",
-            color: "#E87264",
-            padding: "8px 18px",
-            borderRadius: "2px",
-            fontSize: "0.72rem",
-            fontWeight: 600,
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-          }}
+        <Badge 
+          variant="hero" 
+          className="mb-8 border-[rgba(192,57,43,0.4)] bg-[rgba(192,57,43,0.15)] text-[#E87264] rounded-[2px]"
         >
           🇦🇪 UAE&apos;s First Restaurant Costing &amp; Menu Control System
-        </div>
+        </Badge>
 
         {/* Headline */}
         <h1
@@ -121,8 +113,12 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <div className="flex gap-4 flex-wrap justify-center">
-          <Link href="#ai" className="btn-primary">Diagnose My Kitchen Free</Link>
-          <Link href="#pillars" className="btn-outline">How It Works</Link>
+          <Button asChild variant="primary">
+            <Link href="#ai">Diagnose My Kitchen Free</Link>
+          </Button>
+          <Button asChild variant="secondary">
+            <Link href="#pillars">How It Works</Link>
+          </Button>
         </div>
       </div>
     </section>

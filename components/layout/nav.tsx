@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function Nav() {
   return (
@@ -14,9 +15,11 @@ export default function Nav() {
       <div className="font-bebas text-[1.8rem] tracking-[0.08em] text-white">
         P<span className="text-[#5A7A52]">◎</span>RTION IQ
       </div>
-      <Link href="#ai" className="btn-primary" style={{ padding: "10px 24px", fontSize: "0.82rem", letterSpacing: "0.1em" }}>
-        Free Profit Diagnosis
-      </Link>
+      <Button asChild variant="nav" className="px-6 py-2.5 text-[0.82rem] tracking-[0.1em] h-auto">
+        <Link href="#ai">
+          Free Profit Diagnosis
+        </Link>
+      </Button>
     </nav>
   );
 }

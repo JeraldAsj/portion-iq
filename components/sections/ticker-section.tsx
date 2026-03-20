@@ -1,11 +1,8 @@
-const items = [
-  "OVER-PORTIONING","WASTAGE","WRONG YIELD ASSUMPTIONS",
-  "CHEF DEPENDENCY","INVENTORY MISMATCHES","WRONG MENU PRICING","CASH FLOW PANIC",
-];
+import { TICKER_ITEMS } from "@/lib/constants";
 
 export default function TickerSection() {
   // Duplicate for seamless loop
-  const all = [...items, ...items];
+  const all = [...TICKER_ITEMS, ...TICKER_ITEMS];
   return (
     <div className="overflow-hidden whitespace-nowrap" style={{ background: "#C0392B", padding: "12px 0" }}>
       <div className="ticker-inner">

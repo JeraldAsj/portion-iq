@@ -2,11 +2,11 @@
 
 import dynamic from "next/dynamic";
 
-export const ThreeCanvas = dynamic(() => import("@/components/three-canvas"), {
+export const ThreeCanvas = dynamic(() => import("./three-canvas"), {
   ssr: false,
 });
 
 export const GSAPAnimations = dynamic(
-  () => import("@/components/gsap-animations"),
+  () => import("./gsap-animations"),
   { ssr: false },
 );
