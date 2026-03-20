@@ -23,7 +23,7 @@ export default function Home() {
       <GSAPAnimations />
 
       <Nav />
-      <main className="relative z-[1]">
+      <main className="relative z-10">
         <HeroSection />
         <TickerSection />
         <StatsSection />
