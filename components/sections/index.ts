@@ -1,0 +1,12 @@
+export { default as HeroSection } from './hero-section';
+export { default as TickerSection } from './ticker-section';
+export { default as StatsSection } from './stats-section';
+export { default as ProblemSection } from './problem-section';
+export { default as BeforeAfterSection } from './before-after-section';
+export { default as OperateBlindSection } from './operate-blind-section';
+export { default as PillarsSection } from './pillars-section';
+export { default as TransformationSection } from './transformation-section';
+export { default as WhySection } from './why-section';
+export { default as MunicipalitySection } from './municipality-section';
+export { default as TeamSection } from './team-section';
+export { default as CTASection } from './cta-section';
