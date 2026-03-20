@@ -3,19 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ══════════════════════════════
+   CSS VARIABLES
+══════════════════════════════ */
+:root {
+  --navy:  #1A2B45;
+  --navy2: #0F1E33;
+  --sage:  #5A7A52;
+  --sage2: #3D5C35;
+  --red:   #C0392B;
+  --gold:  #D4A843;
+  --cream: #F8F5EF;
+  --white: #FFFFFF;
+  --mid:   #8FA3B1;
+}
+
+/* ══════════════════════════════
+   SHADCN VARIABLES
+══════════════════════════════ */
 @layer base {
   :root {
-    --navy:  #1A2B45;
-    --navy2: #0F1E33;
-    --sage:  #5A7A52;
-    --sage2: #3D5C35;
-    --red:   #C0392B;
-    --gold:  #D4A843;
-    --cream: #F8F5EF;
-    --white: #FFFFFF;
-    --mid:   #8FA3B1;
-
-    --background: 222.2 84% 4.9%; /* Default to dark as per body background */
+    --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
